@@ -1,44 +1,3 @@
-*{
-    margin: 10;
-    padding: 10px;
-    
-}
-nav{
-    background:#D39D38;
-    padding: 10px;
-    border-radius: 70px;
-    /* rotate: 90deg; rotate vertical */
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-nav ul li {
-    display: inline;
-
-}
-nav ul li a {
-    color:wheat;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-     
-}
-nav ul li a:hover{
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
 .card-face-one{
     width: 300px;
     height: 300px;
@@ -53,22 +12,6 @@ nav ul li a:hover{
     text-align: center;
     /* right: 0px; */
     line-height: 20;
-    
-    }
-
-    body{
-        display: flex;
-        justify-content: center ;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-        margin: 0;
-    }
-    h2{
-        font-size: ;
-        background: linear-gradient(90deg,#ff0000,#ff00b3,#ff6200);
-        -webkit-background-clip: text;
-        color: transparent;
     }
 
 .card-face-two{
@@ -79,13 +22,9 @@ nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /* background: url(./image/FOOTBALL.png); */
     
 
 }
 .card-face-one:active{
     transform: translateY(0px);
-   
 }
-
-  
