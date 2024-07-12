@@ -1,70 +1,91 @@
-*
-/*{
+*{
+    margin: 10;
+    padding: 10px;
+    
+}
+nav{
+    background:#D39D38;
+    padding: 10px;
+    border-radius: 70px;
+    /* rotate: 90deg; rotate vertical */
+}
+
+nav ul{
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-}
-body
-{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #84d483;
+    justify-content: space-around;
 }
-nav
-{
-    position: relative;
-    width: 524px;
-    height: 50px;
-    background: #222;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav ul li {
+    display: inline;
+
 }
-nav a
-{
-    position: relative;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 500;
-    color: #fff;
+nav ul li a {
+    color:wheat;
     text-decoration: none;
-    padding: 0 23px;
+    padding: 0.5rem 1rem;
+    display: block;
+     
 }
-nav span
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95px;
-    height: 100%;
-    background: linear-gradient(45deg,#4f1919,#ff3333);
-    border-radius: 8px;
-    transition: 0.5s;
+nav ul li a:hover{
+    background-color: #575757;
+    border-radius: 5px;
 }
-nav a:nth-child(1):hover~span
-{
-    left: 10px;
+
+
+
+
+
+
+
+.card-face-one{
+    width: 300px;
+    height: 300px;
+    background: url(./image/Karthik.jpg);
+    background-size: cover;
+    transform: translateY(200px);
+    transition: all 0.5s ease-in-out;
+    border-radius: 50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* right: 0px; */
+    line-height: 20;
+    
+    }
+
+    body{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+    h2{
+        font-size: ;
+        background: linear-gradient(90deg,#ff0000,#ff00b3,#ff6200);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+.card-face-two{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(173, 173, 173);
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* background: url(./image/FOOTBALL.png); */
+    
+
 }
-nav a:nth-child(2):hover~span
-{
-    left: 95px;
+.card-face-one:active{
+    transform: translateY(0px);
+   
 }
-nav a:nth-child(3):hover~span
-{
-    left: 189px;
-    width: 110px;
-}
-nav a:nth-child(4):hover~span
-{
-    left: 289px;
-    width: 115px;
-}
-nav a:nth-child(3):hover~span
-{
-    left: 413px;
-    width: 110px;
-}*/
+
+  
