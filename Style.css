@@ -27,4 +27,77 @@
 }
 .card-face-one:active{
     transform: translateY(0px);
+    
 }
+
+ 
+    body{
+        background: linear-gradient(90deg, rgba(155, 213, 231, 1) 15%, rgba(69, 70, 198, 1) 66%, rgba(79, 47, 186, 1) 100%);
+    }
+
+    /* Social media CSS */
+    
+    ul{
+        position: absolute;
+        top: 140%;
+        left: 55%;
+        transform: translate(-55%,-25%);
+        display: flex;
+        margin: 0;
+        padding: 0;
+        rotate: 90deg;
+        background-attachment: fixed;
+    
+    }
+    
+    ul li a .fa{
+        font-size: 35px;
+        color: #262626;
+        line-height: 80px;
+        transition: 0.5s;
+        padding-right: 14px;
+        
+         
+    }
+    
+    ul li a span{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 30px;
+        color: #262626;
+        letter-spacing: 4px;
+        transition: 0.5s;
+       
+    }
+    
+    ul li a{
+        text-decoration: none;
+        display: absolute;
+        display: block;
+        width: 170px;
+        height: 80px;
+        background-color: #fff;
+        text-align: left;
+        padding-left: 20px;
+        transform: rotate(-125deg) skew(20deg) translate(0,0);
+        transition: 0.5s;
+        box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+     
+        
+    }
+    
+    ul li a:before{
+        center:"";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: #b1b1b1;
+        transform: 0.5s;
+        transform: rotate(0deg) skew(-45deg);
+        background-attachment: fixed;
+    }
+    
+    
