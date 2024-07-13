@@ -59,7 +59,7 @@
  
     
 
-    /* Social media CSS */
+    /* !Social media CSS */
     a {
       color: #fff;
       text-decoration: none;
@@ -124,9 +124,7 @@
     }
     
     body {
-      background: #4F8B89;
-      color: #fff;
-      font-family: 'Raleway', sans-serif;
+      background: #afafaf;
     }
     
     
