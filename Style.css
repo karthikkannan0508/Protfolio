@@ -1,182 +1,88 @@
- 
- body{
-  /* margin: 0;
-  padding: 0; */
-  background-color:#2f3542 ;
-  /* color: #fff;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  font-family: Montserrat,sans-serif;
-} 
-nav{
+* {
   margin: 0;
   padding: 0;
-  background-color:#2f3542 ;
-  color: #fff;
-  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat,sans-serif;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 10000;
 }
- 
 
-.animated-text{
-  font-size: 34px;
+.logo {
+  color: white;
+  font-size: 1.3rem;
   font-weight: 600;
-  min-width: 280px;
-  
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
 }
 
-.animated-text span{
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+li a {
   position: relative;
+  color: white;
+  font-weight: 300;
 }
 
-.animated-text span::before{
-  content: "Karthik";
-  color: #ff7f50;
-  animation: words 20s infinite;
-  
-}
-
-.animated-text span::after{
-  content: "";
+li a::before {
   position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  background-color: #2f3542;
-  border-left: 2px solid #ff7f50;
-  right: -8px;
-  animation: cursor .8s infinite,typing 20s steps(14) infinite;
-  }
-
-@keyframes cursor{
-  to{
-  border-left: 2px solid #ff7f5000;
-  }
+  content: '';
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background-color: linear-gradient(to right,rgba(0,157,255),rgba(225,0,255));
 }
 
-@keyframes words{
-  0%,20%{
-      content: "Karthik";
-  }
-
-  21%,40%{
-      content: "Developer";
-  }
-
-  /* 41%,60%{
-      content: "Designer";
-  } */
+li a:hover::before {
+  width: 100%;
 }
 
-@keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-      width:0;
-  }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 8px );
-  }
+.visit-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  background-color: linear-gradient(to right,rgba(0,157,255),rgba(225,0,255));
 }
 
+.visit-btn:hover {
+  background-color: linear-gradient(to right,rgba(225,0,255),rgba(0,157,255));
+  transform: scale(1.03);
+}
 
-
-  /* Details style
-     h3{
-      font-size: 35px;
-      text-decoration: underline;
-      text-align:left;
-      text-shadow:10px 1px 10px red ;
-      text-indent: 50px;
-      font-weight: 100px;
-     }
-
-     h3::first-letter{
-      font-size: 50px;
-
-
-     }
-      dd{
-        font-size: 20px;
-        text-indent: 60px;
-
-
-      }
-      h4{
-        font: size 27px;
-        text-indent: 70px;
-        text-decoration: underline;
-      } */
-
- 
-    
-
-    /* !Social media CSS */
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .me {
-      width: 400px;
-      margin: 90px auto;
-    }
-    .me p,
-    .me h1 {
-      letter-spacing: 3px;
-      text-align: center;
-    }
-    .me p {
-      font-weight: 200;
-    }
-    .me span {
-      font-weight: bold;
-    }
-    .social {
-      position: absolute;
-      top: 20px;
-    }
-    .social ul {
-      padding: 0px;
-      transform: translate(-270px, 0);
-    }
-    .social ul li {
-      display: block;
-      margin: 5px;
-      background: rgba(0, 0, 0, 0.36);
-      width: 300px;
-      text-align: right;
-      padding: 10px;
-      border-radius: 0 30px 30px 0;
-      transition: all 1s;
-    }
-    .social ul li:hover {
-      transform: translate(110px, 0);
-      background: rgba(255, 255, 255, 0.4);
-    }
-    .social ul li:hover a {
-      color: #000;
-    }
-    .social ul li:hover i {
-      color: #fff;
-      background: rgba(0, 0, 0, 0.36);
-      transform: rotate(360deg);
-      transition: all 1s;
-    }
-    .social ul li i {
-      margin-left: 10px;
-      color: #000;
-      background: #fff;
-      padding: 10px;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      font-size: 20px;
-      background: #ffffff;
-      transform: rotate(0deg);
-    }
-    
-
-    
-    
+#menu-icon {
+  font-size: 2rem;
+  display: none;
+}
